@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::Buffer do
+describe OmniAuth::Strategies::Drip do
 
   subject do
     OmniAuth::Strategies::Drip.new({})
