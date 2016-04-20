@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["support@getdrip.com"]
   gem.description   = "Provides an OmniAuth strategy for Drip to make authentication with the Drip API simple"
   gem.summary       = "An OmniAuth strategy for Drip"
-  gem.homepage      = "https://getdrip.com"
+  gem.homepage      = "https://www.getdrip.com"
   gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($\)
