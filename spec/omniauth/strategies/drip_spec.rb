@@ -14,7 +14,7 @@ describe OmniAuth::Strategies::Drip do
 
   context "endpoints" do
     it "has correct site" do
-      subject.options.client_options.site.should eq("https://api.getdrip.com/v2")
+      subject.options.client_options.site.should eq("https://api.getdrip.com")
     end
 
     it "has correct authorize_url" do
