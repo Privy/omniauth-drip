@@ -12,7 +12,7 @@ module OmniAuth
       }
 
       option :client_options, {
-        :site => 'https://api.getdrip.com/v2',
+        :site => 'https://api.getdrip.com',
         :authorize_url => 'https://www.getdrip.com/oauth/authorize',
         :token_url => 'https://www.getdrip.com/oauth/token'
       }
@@ -32,11 +32,11 @@ module OmniAuth
       end
 
       def user_info
-        @user_info ||= JSON.parse(access_token.get("/user").body)
+        @user_info ||= JSON.parse(access_token.get("/v2/user").body)
       end
 
       def raw_info
-        @raw_info ||= JSON.parse(access_token.get("/accounts").body)
+        @raw_info ||= JSON.parse(access_token.get("/v2/accounts").body)
       end
     end
   end
